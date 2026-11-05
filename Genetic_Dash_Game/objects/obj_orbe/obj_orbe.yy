@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object6",
+  "%Name":"obj_orbe",
   "eventList":[],
   "managed":true,
-  "name":"Object6",
+  "name":"obj_orbe",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_orbe",
+    "path":"sprites/spr_orbe/spr_orbe.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

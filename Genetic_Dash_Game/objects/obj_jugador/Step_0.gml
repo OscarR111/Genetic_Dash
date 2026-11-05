@@ -6,6 +6,19 @@ if (en_suelo && (keyboard_check(vk_space) || mouse_check_button(mb_left))) {
     vel_y = fuerza_salto;
 }
 
+// Trampolín (jump pad)
+if (place_meeting(x, y, obj_trampolin) && vel_y >= 0) {
+    vel_y = fuerza_trampolin;
+}
+
+// Orbe de doble salto
+var _orbe = instance_place(x, y, obj_orbe);
+if (_orbe != noone && !en_suelo) {
+    if (keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_left)) {
+        vel_y = fuerza_orbe;
+    }
+}
+
 // Gravedad
 vel_y += grav;
 
