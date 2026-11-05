@@ -40,6 +40,7 @@
     {"id":{"name":"rm_nivel_3","path":"rooms/rm_nivel_3/rm_nivel_3.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_bg_Room1","path":"sprites/spr_bg_Room1/spr_bg_Room1.yy",},},
+    {"id":{"name":"spr_bloque_1","path":"sprites/spr_bloque_1/spr_bloque_1.yy",},},
     {"id":{"name":"spr_bloque","path":"sprites/spr_bloque/spr_bloque.yy",},},
     {"id":{"name":"spr_jugador_nave","path":"sprites/spr_jugador_nave/spr_jugador_nave.yy",},},
     {"id":{"name":"spr_jugador","path":"sprites/spr_jugador/spr_jugador.yy",},},
