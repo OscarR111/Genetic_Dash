@@ -18,3 +18,14 @@ if (place_meeting(x, y + vel_y, obj_suelo)) {
 }
 y += vel_y;
 x += vel_x;
+
+// Animación del gato: corre en el suelo y se queda estirado en el aire.
+// En modo nave la imagen tiene un solo cuadro, así que no hace falta tocar nada.
+if (modo == "normal") {
+    if (en_suelo) {
+        image_speed = 1;
+    } else {
+        image_speed = 0;
+        image_index = 1;
+    }
+}

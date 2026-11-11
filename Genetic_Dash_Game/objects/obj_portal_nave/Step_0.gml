@@ -6,6 +6,6 @@ if (_j != noone && !usado) {
         _j.sprite_index = spr_jugador_nave;
     } else {
         _j.modo = "normal";
-        _j.sprite_index = spr_jugador;
+        _j.sprite_index = spr_gato_correr;
     }
 }
