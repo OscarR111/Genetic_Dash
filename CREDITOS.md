@@ -15,3 +15,10 @@ Estos packs se usaron como base de sprites del juego y no traen archivo de licen
 - Imagen del suelo (`Base.png`)
 
 Los archivos originales de estos packs están en `Assets/`, que no se sube al repositorio.
+
+## Música (autor y licencia por confirmar)
+Canciones incluidas en el proyecto (`Genetic_Dash_Game/sounds/`). Falta anotar el autor y la licencia de cada una, y dar el crédito si lo exigen:
+- `mus_Menu_Summer` (menú)
+- `mus_rm1_Solitude` (nivel 1)
+- `mus_rm2_Stars` (nivel 2)
+- `mus_rm3_Remember` (nivel 3)
