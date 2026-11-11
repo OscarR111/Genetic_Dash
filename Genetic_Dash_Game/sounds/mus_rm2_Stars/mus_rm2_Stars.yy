@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_rm2_Stars",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":226.88,
+  "exportDir":"",
+  "name":"mus_rm2_Stars",
+  "parent":{
+    "name":"Genetic_Dash_Game",
+    "path":"Genetic_Dash_Game.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_rm2_Stars.mp3",
+  "volume":1.0,
+}

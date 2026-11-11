@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"mus_rm1_Solitude",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":251.62529,
+  "exportDir":"",
+  "name":"mus_rm1_Solitude",
+  "parent":{
+    "name":"Genetic_Dash_Game",
+    "path":"Genetic_Dash_Game.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_rm1_Solitude.mp3",
+  "volume":1.0,
+}
