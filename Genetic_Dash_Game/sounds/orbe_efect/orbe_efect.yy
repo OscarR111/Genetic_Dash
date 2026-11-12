@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"orbe_efect",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.6973469,
+  "exportDir":"",
+  "name":"orbe_efect",
+  "parent":{
+    "name":"Audio_efects",
+    "path":"folders/Audio_efects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"orbe_efect.ogg",
+  "volume":0.4,
+}

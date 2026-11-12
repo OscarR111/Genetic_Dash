@@ -2,7 +2,11 @@ en_suelo = place_meeting(x, y + 1, obj_suelo);
 var _input = keyboard_check(vk_space) || mouse_check_button(mb_left);
 
 if (modo == "normal") {
-    if (en_suelo && _input) vel_y = fuerza_salto;
+    if (en_suelo && _input){
+	vel_y = fuerza_salto
+	audio_play_sound(salto_efect, 1, false)
+	}
+	
     vel_y += grav;
 } else {
     if (_input) vel_y += nave_empuje;

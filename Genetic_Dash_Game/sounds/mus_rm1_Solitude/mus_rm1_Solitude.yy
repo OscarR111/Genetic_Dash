@@ -14,13 +14,13 @@
   "exportDir":"",
   "name":"mus_rm1_Solitude",
   "parent":{
-    "name":"Genetic_Dash_Game",
-    "path":"Genetic_Dash_Game.yyp",
+    "name":"Audio_efects",
+    "path":"folders/Audio_efects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mus_rm1_Solitude.mp3",
-  "volume":1.0,
+  "volume":0.15,
 }
