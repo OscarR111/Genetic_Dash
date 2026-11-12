@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfx_nave_nyancat",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":3,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":216.82796,
+  "exportDir":"",
+  "name":"sfx_nave_nyancat",
+  "parent":{
+    "name":"Genetic_Dash_Game",
+    "path":"Genetic_Dash_Game.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_nave_nyancat.mp3",
+  "volume":0.1,
+}
