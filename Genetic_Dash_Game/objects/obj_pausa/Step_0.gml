@@ -9,6 +9,6 @@ if (keyboard_check_pressed(vk_escape)) {
 }
 
 if (pausado) {
-    if (keyboard_check_pressed(ord("R"))) { instance_activate_all(); room_restart(); }
+    if (keyboard_check_pressed(ord("R"))) { audio_stop_sound(sfx_nave_nyancat); instance_activate_all(); room_restart(); }
     if (keyboard_check_pressed(ord("M"))) { instance_activate_all(); room_goto(rm_menu); }
 }
