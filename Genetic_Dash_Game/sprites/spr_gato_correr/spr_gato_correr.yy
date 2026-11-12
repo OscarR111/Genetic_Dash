@@ -1,7 +1,7 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_gato_correr",
-  "bboxMode":1,
+  "bboxMode":2,
   "bbox_bottom":69,
   "bbox_left":0,
   "bbox_right":109,

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"sfx_death",
   "parent":{
-    "name":"Genetic_Dash_Game",
-    "path":"Genetic_Dash_Game.yyp",
+    "name":"Audio_efects",
+    "path":"folders/Audio_efects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"mus_rm3_Remember.mp3",
-  "volume":0.15,
+  "volume":0.25,
 }
