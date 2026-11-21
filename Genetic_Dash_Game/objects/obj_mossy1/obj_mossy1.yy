@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_mossy1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_mossy1",
   "overriddenProperties":[],
@@ -12,8 +10,8 @@
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_suelo",
-    "path":"objects/obj_suelo/obj_suelo.yy",
+    "name":"obj_bloque",
+    "path":"objects/obj_bloque/obj_bloque.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -22,8 +22,13 @@ portal_usado = noone;
 morir = function() {
     if (!vivo) return;
     vivo = false;
-    if (es_bot) visible = false;
-    else room_restart();
+    if (es_bot) {
+        visible = false;
+    } else {
+        audio_stop_sound(sfx_nave_nyancat);
+        audio_play_sound(sfx_death, 1, false, 1, 5.4);
+        room_restart();
+    }
 };
 
 ganar = function() {
