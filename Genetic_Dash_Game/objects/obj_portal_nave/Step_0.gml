@@ -4,6 +4,7 @@ if (_j != noone && !usado) {
     if (_j.modo == "normal") {
         _j.modo = "nave";
         _j.sprite_index = spr_jugador_nave;
+		audio_stop_all();
 		audio_play_sound(sfx_nave_nyancat, 1, false, 1);
 		_j.image_speed = 1;
     } else {
@@ -11,4 +12,6 @@ if (_j != noone && !usado) {
         _j.sprite_index = spr_gato_correr;
 		audio_stop_sound(sfx_nave_nyancat);
     }
+	
+	
 }
