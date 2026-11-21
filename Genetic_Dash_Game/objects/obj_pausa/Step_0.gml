@@ -1,5 +1,9 @@
-if (!pausado && instance_exists(obj_jugador)) {
-    porcentaje = clamp(obj_jugador.x / meta_x * 100, 0, 100);
+if (!pausado) {
+    var _max_x = 0;
+    with (obj_jugador) {
+        if (x > _max_x) _max_x = x;
+    }
+    porcentaje = clamp(_max_x / meta_x * 100, 0, 100);
 }
 
 if (keyboard_check_pressed(vk_escape)) {

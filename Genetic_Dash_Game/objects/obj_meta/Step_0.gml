@@ -1,1 +1,3 @@
-if (place_meeting(x, y, obj_jugador)) room_goto(rm_menu);
+with (obj_jugador) {
+    if (vivo && place_meeting(x, y, other)) ganar();
+}
