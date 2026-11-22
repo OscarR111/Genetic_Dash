@@ -42,3 +42,4 @@ ganar = function() {
 // --- Sensores ---
 vision = 400;
 sensores = array_create(7, 0);
+
