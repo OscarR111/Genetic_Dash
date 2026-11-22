@@ -38,3 +38,7 @@ ganar = function() {
     if (es_bot) visible = false;
     else room_goto(rm_menu);
 };
+
+// --- Sensores ---
+vision = 400;
+sensores = array_create(7, 0);
