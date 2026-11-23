@@ -41,5 +41,11 @@ ganar = function() {
 
 // --- Sensores ---
 vision = 400;
-sensores = array_create(7, 0);
+sensores = array_create(9, 0);
+
+// --- Cerebro ---
+cerebro = undefined;
+
+// --- Variable para guardarr el valor de input anterior para que el bot pueda usar el orbe
+input_anterior = false;
 
