@@ -46,6 +46,6 @@ sensores = array_create(9, 0);
 // --- Cerebro ---
 cerebro = undefined;
 
-// --- Variable para guardarr el valor de input anterior para que el bot pueda usar el orbe
+// --- Variable para guardar el valor de input anterior para que el bot pueda usar el orbe
 input_anterior = false;
 
