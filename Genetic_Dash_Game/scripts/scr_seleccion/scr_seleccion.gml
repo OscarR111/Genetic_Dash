@@ -34,3 +34,24 @@ function seleccionar(_fitness, _tipo, _k) {
     if (_tipo == 2) return seleccion_ruleta(_fitness);
     return seleccion_torneo(_fitness, _k);
 }
+
+// TASA DE SELECCIÓN: solo el mejor 'tasa_seleccion' de la generación puede ser padre
+// (1 = todos, 0.5 = la mejor mitad, 0.2 = el mejor 20 %). Se llama una vez por generación,
+// desde poblacion_crear_hijos, y deja listas padres_idx (qué bots) y padres_fit (su fitness).
+function preparar_padres() {
+    var _n = array_length(fitness);
+    var _k = clamp(ceil(_n * tasa_seleccion), 2, _n);
+    var _usado = array_create(_n, false);
+    padres_idx = array_create(_k);
+    padres_fit = array_create(_k);
+    for (var _j = 0; _j < _k; _j++) {
+        // el mejor que todavía no se eligió
+        var _m = -1;
+        for (var _i = 0; _i < _n; _i++) {
+            if (!_usado[_i] && (_m == -1 || fitness[_i] > fitness[_m])) _m = _i;
+        }
+        _usado[_m] = true;
+        padres_idx[_j] = _m;
+        padres_fit[_j] = fitness[_m];
+    }
+}
