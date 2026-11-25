@@ -1,12 +1,9 @@
 // En orden de dificultad. Las dos listas van en el mismo orden.
 // Primero los 3 niveles base (entrenamiento) y luego los 7 de validación del PDF. Avanzado = rm_nivel_3.
-// Al final quedan los niveles anteriores: los dos de Angela y la copia de prueba de Oscar.
 opciones = ["Entrenar 1 (facil)", "Entrenar 2 (medio)", "Entrenar 3 (medio-alto)",
-            "Facil 1", "Facil 2", "Medio 1", "Medio 2", "Medio-alto 1", "Medio-alto 2", "Avanzado (Nivel 3)",
-            "Nivel 1 (Angela)", "Nivel 2 (Angela)", "Prueba bot"];
+            "Facil 1", "Facil 2", "Medio 1", "Medio 2", "Medio-alto 1", "Medio-alto 2", "Avanzado (Nivel 3)"];
 niveles = [rm_base_1, rm_base_2, rm_base_3,
-           rm_facil_1, rm_facil_2, rm_medio_1, rm_medio_2, rm_medioalto_1, rm_medioalto_2, rm_nivel_3,
-           rm_nivel_1, rm_nivel_2, rm_nivel_prueba_1];
+           rm_facil_1, rm_facil_2, rm_medio_1, rm_medio_2, rm_medioalto_1, rm_medioalto_2, rm_nivel_3];
 sel = 0;
 
 // --- Modo de juego (tecla B) y población inicial de los bots (tecla C) ---

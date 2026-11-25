@@ -182,7 +182,7 @@ Funciones en el script `scr_guardado`. En el código de Oscar solo se agregaron 
 **Ojo:** el juego arranca en modo JUGAR. Para entrenar hay que pulsar `B` en el menú antes de entrar al nivel.
 
 **Cómo probarlo:**
-1. Sin pulsar nada en el menú, entrar a "Nivel 2 (Angela)": debe jugarse a mano.
+1. Sin pulsar nada en el menú, entrar a cualquier nivel: debe jugarse a mano.
 2. Volver al menú, pulsar `B` y entrar a "Entrenar 1": deben salir los bots.
 3. Dejar pasar unas generaciones. "Campeon guardado de este nivel" debe pasar de "ninguno" a un porcentaje.
 4. Volver al menú (`Esc`, `M`): al lado de "Entrenar 1" debe decir "campeon: XX %".
@@ -213,9 +213,9 @@ El PDF pide 10 niveles: **3 base para entrenar** y **7 de validación**, en los 
   - `rm_medioalto_1`: meta en x = 9728. 3 orbes, 2 trampolines, 1 murciélago y una sección de nave con 3 pilares.
   - `rm_medioalto_2`: meta en x = 9856. 3 orbes, 2 trampolines, 2 murciélagos y una sección de nave más cerca del principio.
 - [x] **Avanzado:** `rm_nivel_3`. Tiene todas las mecánicas (24 trampolines, 28 orbes, 4 portales de nave).
-- Los niveles de Angela (`rm_nivel_1`, `rm_nivel_2`) y la copia de prueba de Oscar (`rm_nivel_prueba_1`) **no se borraron**: siguen al final del menú.
+- **Borrados (24/11):** los niveles de Angela (`rm_nivel_1`, `rm_nivel_2`) y la copia de prueba de Oscar (`rm_nivel_prueba_1`, 96 % igual al nivel 1). Ya no servían para el PDF. Siguen en el historial de git si hicieran falta. La canción `mus_rm2_Stars`, que sonaba en el nivel 2, ahora suena en los niveles de dificultad media.
 
-**Orden del menú:** Entrenar 1, 2 y 3; Facil 1, Facil 2, Medio 1, Medio 2, Medio-alto 1, Medio-alto 2, Avanzado (Nivel 3); y al final Nivel 1 (Angela), Nivel 2 (Angela) y Prueba bot. Se compactó (32 px entre opciones) para que quepan las 13.
+**Orden del menú:** Entrenar 1, 2 y 3; Facil 1, Facil 2, Medio 1, Medio 2, Medio-alto 1, Medio-alto 2 y Avanzado (Nivel 3). Son justo los 10 niveles del PDF.
 
 **Cómo están armados** (misma forma que los niveles 1 y 2):
 - Suelo: `obj_suelo` en `y = 704`, una ficha cada 760 px. La superficie queda en `y ≈ 717,6`.

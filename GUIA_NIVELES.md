@@ -60,5 +60,5 @@ Hay 12 capas de fondo (`bg_layer_*`, `bg_lighting_*`) con *Tile Horizontal* acti
 - Las 16 plataformas aéreas de Abel y sus 2 techos de zona de nave no están en la versión actual de `rm_nivel_3`.
 - Revisar en `rm_nivel_3`: la segunda ficha del suelo está en `x = 768` (deja 7 px de hueco), el techo invisible está en `y = 0..32` y el primer portal está estirado (escala vertical 2,35).
 - Los slimes son más letales que las púas que reemplazan (rectángulo contra triángulos). La hitbox del gato es de 64×64 y su dibujo es más bajo.
-- Los niveles 1 y 2 ya usan los assets nuevos y los 12 fondos, pero aún conservan púas viejas (`obj_pua`: 53 en el nivel 1 y 14 en el 2) sin convertir. `Room1` sigue entera con los objetos antiguos (`obj_pua`, `obj_bloque`, `obj_trampolin`, `obj_orbe`).
+- Los niveles 1 y 2 originales (`rm_nivel_1`, `rm_nivel_2`) y `rm_nivel_prueba_1` se borraron el 24/11: los sustituyen los 9 niveles nuevos de la IA (ver `PLAN_IA.md`).
 - Créditos y licencias de los assets: ver `CREDITOS.md`.
