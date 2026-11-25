@@ -51,10 +51,11 @@ function poblacion_crear_hijos() {
         _hijos[_i] = mutar(_copia, tipo_mutacion, prob_mutacion, paso_mutacion);
     }
 
-    // El resto: selección, cruce y mutación
+    // El resto: selección, cruce y mutación (los padres salen del mejor 'tasa_seleccion', ver scr_seleccion)
+    preparar_padres();
     for (var _i = n_mutantes + 1; _i < tam_poblacion; _i++) {
-        var _padre_a = bots[seleccionar(fitness, tipo_seleccion, k_torneo)];
-        var _padre_b = bots[seleccionar(fitness, tipo_seleccion, k_torneo)];
+        var _padre_a = bots[padres_idx[seleccionar(padres_fit, tipo_seleccion, k_torneo)]];
+        var _padre_b = bots[padres_idx[seleccionar(padres_fit, tipo_seleccion, k_torneo)]];
         var _hijo = cruce_cerebro(_padre_a.cerebro, _padre_b.cerebro);
         _hijos[_i] = mutar(_hijo, tipo_mutacion, prob_mutacion, paso_mutacion);
     }
