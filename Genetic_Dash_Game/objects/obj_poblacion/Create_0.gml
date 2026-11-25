@@ -8,14 +8,14 @@ if (!global.modo_bot && !bench_activo()) {
 
 // --- PARÁMETROS (se editan solo aquí) ---
 tam_poblacion = 50;     // cuántos bots por generación
-prob_mutacion = 50;     // probabilidad de mutar cada número, en % (10 = 10 %)
-paso_mutacion = 1.5;    // cuánto puede cambiar un número al mutar (±)
+prob_mutacion = 20;     // probabilidad de mutar cada número, en % (10 = 10 %)
+paso_mutacion = 1;      // cuánto puede cambiar un número al mutar (±)
 k_torneo = 3;           // participantes en cada torneo
-frac_mutantes = 0.3;    // fracción de la población que son copias mutadas del campeón (0.3 = 30 %)
-n_mutantes = floor(tam_poblacion * frac_mutantes);   // con 50 bots salen 15, como antes
+frac_mutantes = 0.2;    // fracción de la población que son copias mutadas del campeón (0.2 = 20 %)
+n_mutantes = floor(tam_poblacion * frac_mutantes);   // con 50 bots salen 10
 tipo_seleccion = 1;     // 1 = torneo, 2 = ruleta
 tipo_mutacion = 1;      // 1 = suma, 2 = reemplazo
-tipo_pesos = 2;         // pesos iniciales: 1 = aleatorios, 2 = iguales, 3 = nulos
+tipo_pesos = 1;         // pesos iniciales: 1 = aleatorios, 2 = iguales, 3 = nulos
 valor_pesos = 0.5;      // el valor que usan todos los pesos si tipo_pesos es 2
 umbral = 0.5;           // la red salta si su salida es mayor que este valor
 tasa_seleccion = 1;     // fracción de la generación que puede ser padre (1 = todos, 0.2 = el mejor 20 %)

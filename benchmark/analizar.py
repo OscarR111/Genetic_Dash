@@ -1,22 +1,22 @@
-"""Tablas y gráficas del benchmark de Genetic Dash.
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["pandas"]
+# ///
+"""Tablas del benchmark de Genetic Dash.
 
 El juego escribe los datos al correr el benchmark (tecla X del menú) en
 %LOCALAPPDATA%\\Genetic_Dash_Game\\bench_<fecha>_resultados.csv y bench_<fecha>_generaciones.csv.
 Este script los lee y deja todo en benchmark/resultados/<fecha>/.
+Las gráficas las hace graficas.py.
 
-Uso:
-    python analizar.py                          (usa el benchmark más reciente)
-    python analizar.py ruta/bench_X_resultados.csv
-
-Necesita pandas y matplotlib.
+Uso (con uv, que instala solo pandas la primera vez):
+    uv run analizar.py                          (usa el benchmark más reciente)
+    uv run analizar.py ruta/bench_X_resultados.csv
 """
 import os
 import sys
 from pathlib import Path
 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
 import pandas as pd
 
 CATEGORIAS = ["facil", "medio", "medioalto", "avanzado"]
@@ -91,36 +91,6 @@ texto += ["## Definiciones", "",
           "- **Tasa de éxito:** porcentaje de validaciones en las que el campeón llegó a la meta.",
           "- **Población que gana:** porcentaje de la población final que llegó a la meta.", ""]
 (salida / "tablas.md").write_text("\n".join(texto), encoding="utf-8")
-
-# ---------------------------------------------------------------- gráfica 1: curvas de convergencia
-niveles_ent = list(dict.fromkeys(ent["nivel"]))
-fig, ejes = plt.subplots(1, len(niveles_ent), figsize=(6 * len(niveles_ent), 4.5), squeeze=False)
-for eje, nivel in zip(ejes[0], niveles_ent):
-    g = gen[gen["nivel"] == nivel]
-    tope = int(g["generacion"].max())
-    for exp in orden:
-        curvas = []
-        for _, corrida in g[g["experimento"] == exp].groupby("repeticion"):
-            s = corrida.set_index("generacion")["mejor"]
-            # una corrida que ya convergió se queda en su último valor hasta el final
-            curvas.append(s.reindex(range(1, tope + 1)).ffill())
-        if curvas:
-            eje.plot(range(1, tope + 1), pd.concat(curvas, axis=1).mean(axis=1), label=exp)
-    eje.set_title(nivel)
-    eje.set_xlabel("generación")
-    eje.set_ylabel("mejor fitness (media de las corridas)")
-    eje.set_ylim(0, 1.05)
-ejes[0][-1].legend(fontsize=7, loc="lower right")
-fig.tight_layout()
-fig.savefig(salida / "curvas_convergencia.png", dpi=120)
-
-# ---------------------------------------------------------------- gráfica 2: tasa de éxito por tipo de nivel
-ax = exito.plot.bar(figsize=(max(8, len(orden) * 0.8), 4.5))
-ax.set_ylabel("tasa de éxito en validación (%)")
-ax.set_ylim(0, 105)
-plt.xticks(rotation=45, ha="right")
-plt.tight_layout()
-plt.savefig(salida / "exito_validacion.png", dpi=120)
 
 print(f"Listo: {salida}")
 for f in sorted(salida.iterdir()):

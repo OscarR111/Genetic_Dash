@@ -16,15 +16,15 @@
 
 // Corridas por experimento (cada una con otra semilla) y tope de generaciones por nivel
 function bench_ajustes() {
-    return { repeticiones: 3, max_generaciones: 100 };
+    return { repeticiones: 10, max_generaciones: 150 };
 }
 
-// Configuración base: los mismos valores que obj_poblacion
+// Configuración base: los mismos valores que obj_poblacion (si se cambia una, cambiar la otra)
 function bench_base() {
     return {
-        tam_poblacion: 50, prob_mutacion: 50, paso_mutacion: 1.5,
+        tam_poblacion: 50, prob_mutacion: 20, paso_mutacion: 1, frac_mutantes: 0.2,
         tipo_seleccion: 1, k_torneo: 3, tasa_seleccion: 1,
-        tipo_mutacion: 1, tipo_pesos: 2, valor_pesos: 0.5, umbral: 0.5
+        tipo_mutacion: 1, tipo_pesos: 1, valor_pesos: 0.5, umbral: 0.5
     };
 }
 
@@ -35,8 +35,8 @@ function bench_experimentos() {
         ["pobladores_10", "tam_poblacion", 10],
         ["pobladores_20", "tam_poblacion", 20],
         ["mutacion_10", "prob_mutacion", 10],
-        ["mutacion_20", "prob_mutacion", 20],
-        ["pesos_aleatorios", "tipo_pesos", 1],
+        ["mutacion_50", "prob_mutacion", 50],
+        ["pesos_iguales", "tipo_pesos", 2],
         ["pesos_nulos", "tipo_pesos", 3],
         ["seleccion_50", "tasa_seleccion", 0.5],
         ["seleccion_20", "tasa_seleccion", 0.2],
@@ -59,7 +59,7 @@ function bench_etapas() {
         ["entrenar", rm_base_3, "medioalto"],
         ["validar", rm_medioalto_1, "medioalto"],
         ["validar", rm_medioalto_2, "medioalto"],
-        ["validar", rm_nivel_3, "avanzado"]
+        ["validar", rm_avanzado, "avanzado"]
     ];
 }
 

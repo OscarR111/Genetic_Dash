@@ -55,6 +55,7 @@
     {"id":{"name":"rm_base_1","path":"rooms/rm_base_1/rm_base_1.yy",},},
     {"id":{"name":"rm_base_2","path":"rooms/rm_base_2/rm_base_2.yy",},},
     {"id":{"name":"rm_base_3","path":"rooms/rm_base_3/rm_base_3.yy",},},
+    {"id":{"name":"rm_avanzado","path":"rooms/rm_avanzado/rm_avanzado.yy",},},
     {"id":{"name":"_matrix_multiply","path":"scripts/_matrix_multiply/_matrix_multiply.yy",},},
     {"id":{"name":"_matrix_sum","path":"scripts/_matrix_sum/_matrix_sum.yy",},},
     {"id":{"name":"create_random_matrix","path":"scripts/create_random_matrix/create_random_matrix.yy",},},
@@ -121,6 +122,7 @@
     {"roomId":{"name":"rm_base_1","path":"rooms/rm_base_1/rm_base_1.yy",},},
     {"roomId":{"name":"rm_base_2","path":"rooms/rm_base_2/rm_base_2.yy",},},
     {"roomId":{"name":"rm_base_3","path":"rooms/rm_base_3/rm_base_3.yy",},},
+    {"roomId":{"name":"rm_avanzado","path":"rooms/rm_avanzado/rm_avanzado.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
